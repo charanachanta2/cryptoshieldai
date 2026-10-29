@@ -1,0 +1,23 @@
+# ML Service Dependencies for CryptoShield AI
+# Target: Python 3.14.2 | scikit-learn 1.8.0 (model serialization version)
+# Install into project-local .venv only: python -m venv services/ml/.venv && services/ml/.venv/Scripts/pip install -r services/ml/requirements.txt
+
+# ML Runtime (required for model inference - MUST match training environment)
+scikit-learn==1.8.0
+joblib==1.5.3
+numpy==2.4.0
+pandas==2.3.3
+
+# Web Framework (Python 3.14 compatible)
+fastapi==0.118.3
+uvicorn[standard]==0.35.0
+
+# Pydantic v2 (required for FastAPI 0.118+)
+pydantic==2.11.7
+pydantic-settings==2.10.1
+
+# HTTP Client
+httpx==0.28.1
+
+# Environment
+python-dotenv==1.0.1

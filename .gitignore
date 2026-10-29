@@ -1,0 +1,8 @@
+datasets/
+data/db/
+node_modules/
+__pycache__/
+.venv/
+venv/
+*.log
+.env

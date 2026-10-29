@@ -1,0 +1,21 @@
+{
+  "name": "cryptoshield-ai",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:api": "npm run build --workspace=apps/api",
+    "build:web": "npm run build --workspace=apps/web",
+    "build": "npm run build:api && npm run build:web",
+    "lint:api": "npm run lint --workspace=apps/api",
+    "lint:web": "npm run lint --workspace=apps/web",
+    "lint": "npm run lint:api && npm run lint:web"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

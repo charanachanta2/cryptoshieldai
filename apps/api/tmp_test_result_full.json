@@ -1,0 +1,8 @@
+{
+  "error": {
+    "code": "UNAUTHENTICATED",
+    "message": "Invalid access token",
+    "requestId": "14d3b360-6de9-4e3c-bc5d-d1cbb2afe60a",
+    "retryable": false
+  }
+}
